@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+body {
+    font-family: "Open Sans";
+    overflow-x: hidden;
+}
+
+/* common css start*/
+.d-flex {
+    display: flex;
+}
+
+.mla {
+    margin-left: auto;
+}
+
+.posi-re {
+    position: relative;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* common css end */
+
+/* hero section start */
+.header {
+    background-image: url(../images/Headerbackground.png);
+    position: relative;
+    height: 1053px;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+}
+
+.nav-menu .nav-item {
+    display: inline;
+}
+
+.nav-menu .nav-item a {
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-menu {
+    margin: 0 30px;
+}
+
+.search {
+    padding-top: 12px;
+}
+
+.search input {
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+}
+
+.fa-solid {
+    top: 2px;
+    right: 30px;
+}
+
+.main-head {
+    font-size: 92px;
+    color: #ffffff;
+    font-family: "Reey";
+    filter: drop-shadow(0px 5px 2.5px rgba(84, 82, 79, 0.22));
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+}
+
+.main-dis {
+    width: 469px;
+    height: 65px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Open Sans";
+    text-align: left;
+}
+
+.hero-dis {
+    padding-top: 15rem;
+    padding-left: 2rem;
+}
+
+.par-dis {
+    width: 452px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Open Sans";
+}
+
+.btn-read-more {
+    display: inline-block;
+    font-size: 23px;
+    letter-spacing: 5px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Open Sans";
+    width: 334px;
+    height: 75px;
+    border-radius: 38px;
+    text-align: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.par-dis {
+    padding-top: 10px;
+}
+
+.logo-png {
+    left: 4rem;
+    top: 10rem;
+}
+
+.nood-png {
+    right: 0;
+    top: 20rem;
+}
+
+.chatni-png {
+    right: 30rem;
+    bottom: -1rem;
+}
+
+.leaf-png {
+    right: -5rem;
+    bottom: -9em;
+}
+
+/* hero section end */
+
+/* main section start */
+
+/* section1 start */
+.sec1-head {
+    margin: 30px;
+    font-size: 75px;
+    color: #222328;
+    font-family: "Reey";
+}
+
+.sec1-head-disc {
+    margin: 25px;
+    font-size: 27px;
+    color: #2f3135;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.dish-size {
+    height: 410px;
+    width: 382px;
+    object-fit: cover;
+}
+
+.dish-head {
+    text-align: center;
+    font-size: 29px;
+    color: #343434;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.dish-head-disc {
+    text-align: center;
+    font-size: 23px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.dish-btn {
+    display: flex;
+    justify-content: space-around;
+    font-size: 23px;
+    letter-spacing: 5px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Open Sans";
+    width: 334px;
+    height: 75px;
+    border-radius: 38px;
+    text-align: center;
+    background-color: #343434;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+/* section1 end */
+
+/* section2 start */
+.sec2-bg {height: 400px;
+    background-image: url(../images/sec3back.png.png);
+    color: #ffffff;
+}
+
+.sec2-head {margin-top: 20px;
+    font-size: 75px;
+    line-height: 52px;
+    color: #ffffff;
+    font-family: "Reey";
+}
+
+.sec2-btn {
+    display: inline-block;
+    font-size: 23px;
+    letter-spacing: 5px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Open Sans";
+    width: 334px;
+    height: 75px;
+    border-radius: 38px;
+    text-align: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.sec2-head {
+    margin: 40px;
+}
+
+.sec2-head-disc {
+    width: 500px;
+    text-align: left;
+}
+
+/* section2 end */
+
+/* section3 start */
+.sec3 {
+    margin-top: 50px;
+}
+
+.sec3-line {
+    margin-top: 100px;
+    width: 900px;
+}
+
+.sec3-dish-head {
+    font-size: 43px;
+    color: #27292c;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.sec3-img2 {
+    margin-bottom: -7rem;
+
+}
+
+/* section3 end */
+
+/* section4 start */
+.sec4 {
+    height: 1080px;
+    background: url(../images/Headerbackground.png)no-repeat 50% /cover;
+
+}
+
+.sec4-head {
+    margin-top: 60px;
+    font-size: 58px;
+    color: #f8f6f1;
+    font-family: "Reey";
+}
+
+.sec4-head-descr {
+    margin: 1rem 13rem;
+    height: 74px;
+    font-size: 18px;
+    line-height: 33px;
+    color: #f8f6f1;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.rectangle {
+    width: 162px;
+    height: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+}
+
+.sec4-partial {
+    bottom: -10rem;
+    right: 2rem;
+}
+
+.sec4-sliceOFpizza {
+    bottom: -11rem;
+    left: 10rem;
+}
+
+.sec4-bothleaves {
+    top: -10rem;
+    left: -5rem;
+    width: 82rem;
+}
+
+/* section4 end */
+
+/* section5 start */
+.sec5 {
+    margin-top: 8rem;
+
+}
+
+.sec5-head {
+    text-align: center;
+    font-size: 42px;
+    line-height: 33px;
+    color: #393939;
+    font-family: "Reey";
+}
+
+.sec5-head-descr {
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 25px;
+    color: #333d42;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.sec5-last-row-descr {
+    margin: 11rem 0px 38px 0;
+    width: 817px;
+    font-size: 25px;
+    color: #3f3f3f;
+    font-weight: 500;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.sec5-last-row-name {
+    font-size: 21px;
+    line-height: 33px;
+    color: #3f3f3f;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+/* section5 end */
+
+/* main section end */
+
+/* footer section start */
+
+/* section1 start */
+.foot-title {
+    height: 730px;
+    margin-top: 30px;
+    background: url(../images/footbg.png) no-repeat 50%/cover;
+}
+
+.foot-col {
+    width: 945px;
+    margin-top: 120px;
+    z-index: 1;
+}
+
+.foot-sec1-head {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.foot-sec1-head-descr {
+    /* width: 1811px;
+    height: 210px; */
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.email {
+    margin: 40px 50px;
+    width: 659px;
+    height: 63px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    opacity: 0.678;
+    font-size: 25px;
+    color: #54524f;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding-left: 30px;
+}
+
+.Sub-btn {
+    bottom: 6.5rem;
+    left: 40rem;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    line-height: 65px;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 222px;
+    height: 65px;
+    border-radius: 32px;
+    background-color: #54524f;
+}
+
+.footerleaf {
+    top: -4rem;
+    width: 86rem;
+    left: -6rem;
+    z-index: 0;
+}
+/* section1 end */
+
+/* section2 start */
+.foot-cnt {
+    margin: 100px 0;
+    z-index: 1;
+}
+
+.ft-colst {
+    width: 50%;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social_icon {
+    width: 42px;
+    text-decoration: none;
+}
+
+.ft-head {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.ft-descr {
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
+.ft-descr:hover {
+    color: orange;
+}
+/* section2 end */
+/* footer section end */
