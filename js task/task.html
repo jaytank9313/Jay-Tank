@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eligibility & Grade Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+    h2 {
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px 0;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .output {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Task 1: Driving Eligibility</h2>
+  <label>Name:</label>
+  <input type="text" id="name">
+  <label>Birth Year:</label>
+  <input type="number" id="birthYear">
+  <button onclick="checkDriving()">Check Eligibility</button>
+  <div id="driveResult" class="output"></div>
+
+  <hr>
+
+  <h2>Task 2: Grade Calculator</h2>
+  <label>Subject 1:</label>
+  <input type="number" id="mark1">
+  <label>Subject 2:</label>
+  <input type="number" id="mark2">
+  <label>Subject 3:</label>
+  <input type="number" id="mark3">
+  <label>Subject 4:</label>
+  <input type="number" id="mark4">
+  <button onclick="calculateGrade()">Calculate Grade</button>
+  <div id="gradeResult" class="output"></div>
+
+  <script>
+    // Task 1: Driving Eligibility
+    function checkDriving() {
+      const name = document.getElementById('name').value.trim();
+      const birthYear = parseInt(document.getElementById('birthYear').value);
+      const currentYear = new Date().getFullYear(); 
+      const resultDiv = document.getElementById('driveResult');
+
+      if (!name || isNaN(birthYear)) {
+        resultDiv.innerHTML = "❌ Please enter valid name and birth year.";
+        resultDiv.className = "output error";
+        return;
+      }
+
+      const age = currentYear - birthYear;
+
+      if (age >= 18) {
+        resultDiv.innerHTML = `✅ ${name}, you are ${age} years old and eligible to drive.`;
+        resultDiv.className = "output success";
+      } else {
+        resultDiv.innerHTML = `❌ ${name}, you are ${age} years old and not eligible to drive.`;
+        resultDiv.className = "output error";
+      }
+    }
+
+    // Task 2: Grade Calculation
+    function calculateGrade() {
+      const marks = [
+        parseFloat(document.getElementById('mark1').value),
+        parseFloat(document.getElementById('mark2').value),
+        parseFloat(document.getElementById('mark3').value),
+        parseFloat(document.getElementById('mark4').value)
+      ];
+
+      const resultDiv = document.getElementById('gradeResult');
+
+      // Validate all marks
+      for (let i = 0; i < marks.length; i++) {
+        if (isNaN(marks[i]) || marks[i] < 0 || marks[i] > 100) {
+          resultDiv.innerHTML = `❌ Please enter valid marks between 0 and 100 for all subjects.`;
+          resultDiv.className = "output error";
+          return;
+        }
+      }
+
+      const total = marks.reduce((sum, mark) => sum + mark, 0);
+      const percentage = total / marks.length;
+      let grade;
+
+      if (percentage >= 90) grade = 'A+';
+      else if (percentage >= 80) grade = 'A';
+      else if (percentage >= 70) grade = 'B';
+      else if (percentage >= 60) grade = 'C';
+      else if (percentage >= 50) grade = 'D';
+      else grade = 'F';
+
+      resultDiv.innerHTML = `✅ Percentage: ${percentage.toFixed(2)}%<br>🎓 Grade: ${grade}`;
+      resultDiv.className = "output success";
+    }
+  </script>
+
+
+<script>
+
+document.writeln("hello world ")
+
+</script>
+</body>
+</html>

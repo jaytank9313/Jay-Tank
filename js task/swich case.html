@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+
+
+    <script>
+
+                //  task 1  Traffic Light Signal
+
+        let color = prompt("Enter traffic light color:").toLowerCase();
+
+switch (color) {
+  case 'red': console.log("Stop"); break;
+  case 'yellow': console.log("Get Ready"); break;
+  case 'green': console.log("Go"); break;
+  default: console.log("Invalid color");
+}
+
+        //      task 2   Month Days Finder
+
+let month = parseInt(prompt("Enter month number (1-12):"));
+
+switch (month) {
+  case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+    console.log("31 days");
+    break;
+  case 4: case 6: case 9: case 11:
+    console.log("30 days");
+    break;
+  case 2:
+    console.log("28 days (29 in leap year)");
+    break;
+  default:
+    console.log("Invalid month");
+}
+
+  // task 3 Calculator
+   
+  var a = prompt("please enter 1st num");
+        var b = prompt("please enter 2nd num");
+        var opr = prompt("please select amomg +,-,*,/");
+
+        switch (opr) {
+
+            case '+':
+                var res = parseFloat(a) + parseFloat(b);
+                console.log(`${a} + ${b} = ${res}`);
+                break;
+
+            case '-':
+                var res = parseFloat(a) - parseFloat(b);
+                console.log(`${a} - ${b} = ${res}`);
+                break;
+
+            case '*':
+                var res = parseFloat(a) * parseFloat(b);
+                console.log(`${a} * ${b} = ${res}`);
+                break;
+
+            case '/':
+                var res = parseFloat(a) / parseFloat(b);
+                console.log(`${a} / ${b} = ${res}`);
+                break;
+
+            default:
+                console.log('Invalid operator');
+        }
+
+     // 4. ATM Simulation
+
+</script>
+</body>
+</html>

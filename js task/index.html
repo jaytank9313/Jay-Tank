@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Task 1:
+        Student marks Calculator
+    </h2>
+    <h2>
+        Task 2:
+        call AVC
+    </h2>
+    <br>
+    <h2>
+        Task 3:
+        ATM
+    </h2>
+    <br>
+    <h2>
+        Task 4:
+        Week day
+    </h2>
+    <br>
+    <h2>
+        Task 5:
+        Calulator
+    </h2>
+    <br>
+    <h2>
+        Task 6:
+        Season month finder
+    </h2>
+    <br>
+    <h2>
+        Task 7:
+        Traffic light system
+    </h2>
+    <br>
+    <h2>
+        Task 8:
+        vowel and consonant checker
+    </h2>
+    <br>
+    <h2>
+        Task 9:
+        Fruit price finder
+    </h2>
+    <br>
+    <h2>
+        Task 10:
+        Game Level
+    </h2>
+    <br>
+</body>
+
+<script>
+    // Task :1
+    let physics = prompt("enter a physics marks");
+    let chemistry = prompt("enter a chemistry marks");
+    let Maths = prompt("enter a Maths marks");
+
+    let avg = (parseInt(physics) + parseInt(chemistry) + parseInt(Maths)) / 3;
+    console.log(avg);
+
+    switch (true) {
+        case (avg >= 90):
+            console.log("Grade A");
+            break;
+        case (avg >= 80):
+            console.log("Grade B");
+            break;
+        case (avg >= 70):
+            console.log("Grade C");
+            break;
+        case (avg >= 60):
+            console.log("Grade D");
+            break;
+        default:
+            console.log("Grade F");
+    }
+
+    // Task 2
+    let voice = prompt("press 1 for hindi and 2 for english and press 3 for gujrati");
+    switch (true) {
+        case (voice == 1):
+            console.log("hindi");
+            break;
+        case (voice == 2):
+            console.log("english");
+            break;
+        case (voice == 3):
+            console.log("gujrati");
+            break;
+        default:
+            console.log("invalid input");
+    }
+    // Task 3
+    let pin = prompt("enter a pin");
+    switch (true) {
+        case (pin == 1234):
+            console.log("pin is correct");
+            break;
+        default:
+            console.log("pin is incorrect");
+    }
+
+    // Task 4
+    let day = prompt("enter a date");
+
+    switch (true) {
+        case (day == 20):
+            console.log("today is tuesday");
+            break;
+        case (day == 21):
+            console.log("today is wednesday");
+            break;
+        case (day == 22):
+            console.log("today is thursday");
+            break;
+        case (day == 23):
+            console.log("today is friday");
+            break;
+        case (day == 24):
+            console.log("today is saturday");
+            break;
+        case (day == 25):
+            console.log("today is sunday");
+            break;
+    }
+
+    // Task 5
+    let num1 = parseFloat(prompt("enter a first number"));
+    let num2 = parseFloat(prompt("enter a second number"));
+    let operator = prompt("enter a operator");
+    switch (operator) {
+        case "+":
+            console.log(num1 + num2);
+            break;
+        case "-":
+            console.log(num1 - num2);
+            break;
+        case "*":
+            console.log(num1 * num2);
+            break;
+        case "/":
+            console.log(num1 / num2);
+            break;
+        default:
+            console.log("invalid operator");
+    }
+    // Task 6
+    let month = prompt("enter a Season");
+    switch (month) {
+        case "winter":
+            console.log("December, January, February,March");
+            break;
+        case "summer":
+            console.log("April,may,June, July, ");
+            break;
+        case "Monsoon":
+            console.log("August,September, October, November");
+            break;
+        default:
+            console.log("invalid season");
+    }
+    // Task 7
+    let traffic = prompt("enter a traffic light color");
+    switch (traffic) {
+        case "red":
+            console.log("stop");
+            break;
+        case "yellow":
+            console.log("ready to go");
+            break;
+        case "green":
+            console.log("go");
+            break;
+        default:
+            console.log("invalid color");
+    }
+    // Task 8
+    let char = prompt("enter a character");
+    switch (true) {
+        case (char == "a" || char == "e" || char == "i" || char == "o" || char == "u"):
+            console.log("vowel");
+            break;
+        default:
+            console.log("consonant");
+    }
+    // Task 9
+    let fruit = prompt("enter a fruit name");
+    switch (fruit) {
+        case "banana":
+            console.log("banana price is 50");
+            break;
+        case "apple":
+            console.log("apple price is 100");
+            break;
+        case "mango":
+            console.log("mango price is 80");
+            break;
+        case "orange":
+            console.log("orange price is 60");
+            break;
+        default:
+            console.log("invalid fruit");
+    }
+    // Task 10
+    let level = prompt("enter a level");
+    switch (level) {
+        case "easy":
+            console.log("10 enimies");
+            break;
+        case "medium":
+            console.log("20 enimies");
+            break;
+        case "hard":
+            console.log("30 enimies");
+            break;
+        default:
+            console.log("invalid level");
+    }
+
+</script>
+
+</html>
